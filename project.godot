@@ -45,8 +45,3 @@ saltar={
 2d_physics/layer_1="Plataformas"
 2d_physics/layer_2="Personaje"
 2d_physics/layer_3="Enemigos"
-
-[rendering]
-
-renderer/rendering_method="gl_compatibility"
-renderer/rendering_method.mobile="gl_compatibility"
