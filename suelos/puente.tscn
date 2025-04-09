@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhcts3aohhc2u"]
+
+[ext_resource type="Texture2D" uid="uid://dwg7bgjp2ngu7" path="res://assets/floor/puente.png" id="1_ko5sg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gu20t"]
+size = Vector2(1442, 22)
+
+[node name="puente" type="StaticBody2D"]
+
+[node name="puenteSprite" type="Sprite2D" parent="."]
+position = Vector2(0, 78)
+texture = ExtResource("1_ko5sg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_gu20t")

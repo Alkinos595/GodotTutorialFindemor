@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bx2cpsvlfnvso"]
+
+[ext_resource type="Texture2D" uid="uid://d2hrglh3cy8l3" path="res://assets/character/character_round_purple.png" id="1_5pf6s"]
+[ext_resource type="Script" uid="uid://dcyi0dc0rvupr" path="res://personaje/personaje.gd" id="1_sbc8c"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yyc1j"]
+radius = 18.0
+height = 54.0
+
+[node name="Personaje" type="CharacterBody2D"]
+script = ExtResource("1_sbc8c")
+gravity = 980
+jump_speed = 500
+speed_move = 350
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_5pf6s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_yyc1j")
